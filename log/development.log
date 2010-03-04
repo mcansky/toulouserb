@@ -1,0 +1,935 @@
+# Logfile created on Thu Mar 04 16:49:22 +0100 2010/!\ FAILSAFE /!\  Thu Mar 04 17:02:24 +0100 2010
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/rack/adapter/rails.rb:74:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/controllers/controller.rb:80:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `send'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `run_command'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:143:in `run!'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/bin/thin:6
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19:in `load'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19
+/!\ FAILSAFE /!\  Thu Mar 04 17:04:50 +0100 2010
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/rack/adapter/rails.rb:74:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/controllers/controller.rb:80:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `send'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `run_command'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:143:in `run!'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/bin/thin:6
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19:in `load'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19
+/!\ FAILSAFE /!\  Thu Mar 04 17:04:51 +0100 2010
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/rack/adapter/rails.rb:74:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/controllers/controller.rb:80:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `send'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `run_command'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:143:in `run!'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/bin/thin:6
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19:in `load'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19
+/!\ FAILSAFE /!\  Thu Mar 04 17:04:52 +0100 2010
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/rack/adapter/rails.rb:74:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/controllers/controller.rb:80:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `send'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `run_command'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:143:in `run!'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/bin/thin:6
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19:in `load'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19
+/!\ FAILSAFE /!\  Thu Mar 04 17:05:01 +0100 2010
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/rack/adapter/rails.rb:74:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/controllers/controller.rb:80:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `send'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `run_command'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:143:in `run!'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/bin/thin:6
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19:in `load'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19
+/!\ FAILSAFE /!\  Thu Mar 04 17:05:17 +0100 2010
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/rack/adapter/rails.rb:74:in `call'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/controllers/controller.rb:80:in `start'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `send'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `run_command'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:143:in `run!'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/gems/thin-1.2.7/bin/thin:6
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19:in `load'
+    /Users/mcansky/Code/arbousier3/arbousierR/vendor/bundled_gems/bin/thin:19
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:14:49) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 76ms (View: 75, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:15:02) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:15:35) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:16:33) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:17:15) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:17:47) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:18:13) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:18:20) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:18:36) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:18:51) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:18:52) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:18:53) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:19:09) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:19:11) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:19:11) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 93ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:19:12) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:19:28) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:19:29) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:19:30) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:19:30) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:20:06) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:21:35) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:21:55) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:27:55) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:27:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/pic1.png" with {:method=>:get}):
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+  vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+  vendor/bundled_gems/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/controllers/controller.rb:80:in `start'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `send'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:177:in `run_command'
+  vendor/bundled_gems/gems/thin-1.2.7/lib/thin/runner.rb:143:in `run!'
+  vendor/bundled_gems/gems/thin-1.2.7/bin/thin:6
+  vendor/bundled_gems/bin/thin:19:in `load'
+  vendor/bundled_gems/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:28:13) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:29:29) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:33:07) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:33:42) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:33:51) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:34:16) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:34:26) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:34:34) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:35:12) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:35:23) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:35:52) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:35:58) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:36:07) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:36:14) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:36:34) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:36:36) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:37:12) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:37:27) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:37:42) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:38:26) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:40:54) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:41:08) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:55:23) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:57:51) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:58:00) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:58:35) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:58:43) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:59:03) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:59:27) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 17:59:54) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:00:00) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:00:18) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:00:50) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:01:19) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:01:31) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 86ms (View: 83, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:02:13) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:02:34) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:02:47) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:03:01) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:03:13) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:03:18) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:03:34) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:03:38) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:03:51) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:04:42) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:05:06) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:05:13) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:05:50) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:05:56) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:06:01) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:09:05) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:09:19) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:19:32) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:24:08) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:26:06) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:28:22) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:31:28) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 86ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:32:37) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:32:46) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:33:17) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:33:35) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:33:59) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:34:04) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:34:11) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:34:15) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:34:49) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:35:03) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:35:17) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 84ms (View: 82, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:38:11) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:38:25) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:38:58) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:39:40) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 18:41:54) [GET]
+Rendering template within layouts/application
+Rendering application/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
