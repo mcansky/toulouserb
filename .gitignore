@@ -1,3 +1,4 @@
 public/.DS_Store
 db/development.sqlite3
 vendor/bundled_gems/*
+log/*
