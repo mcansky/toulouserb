@@ -32,6 +32,47 @@ h1, h2, h3, h4, a, a:hover {
 	width: 100%;
 	background: #d52100;
 	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#topbar h1 a {
+	font-family: times;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	letter-spacing: 20px;
+	font-size: 17pt;
+}
+
+#menu {
+	background: #222;
+}
+
+#menu ul {
+	padding: 10px;
+}
+
+#menu li {
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	margin-left: 10px;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	border-bottom: 3px solid #555;
+	background: #555;
+}
+
+#menu a {
+	text-decoration :none;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+#menu li:hover {
+	background: #333;
+	border-bottom: 3px solid #333;
 }
 
 #content {
@@ -60,17 +101,17 @@ div.techno {
 	margin-top: 20px;
 }
 div.techno h2 {
-	margin-left: 40px;
+	margin-left: 70px;
 }
 
 div.techno p.icon {
 	float: left;
 	margin: 10px;
-	margin-top: 20px;
+	margin-top: 15px;
 	margin-right: 20px;
 }
 
-div.techno p.text, #more p {
+div.techno p.text {
 	margin-left: 70px;
 	font-size: 11pt;
 	line-height: 13pt;
@@ -94,5 +135,12 @@ div.techno p.text, #more p {
 }
 #more h2 {
 	margin-top: 10px;
-	font-size: 16pt;
+	font-size: 14pt;
+	margin-left: 20px;
+}
+#more p {
+	margin-left: 20px;
+	font-size: 11pt;
+	line-height: 13pt;
+	margin-top: 10px;
 }
