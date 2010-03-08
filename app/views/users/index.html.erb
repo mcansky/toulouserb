@@ -1,0 +1,12 @@
+<h1>Users</h1>
+<div id="users">
+	<ul>
+	<% for user in @users %>
+		<li>
+			<%= link_to user.login, user %>
+			<%= link_to "Delete", user, {:method => :delete, :confirm => "Are you sure ?", :title => "Delete" }%>
+		</li>
+	<% end %>
+	</ul>
+	<%= link_to "New user", new_user_path %>
+</div>
