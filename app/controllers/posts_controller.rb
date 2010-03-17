@@ -2,7 +2,8 @@ class PostsController < ApplicationController
   before_filter :require_login, :except => ["index", "show"]
 
   def index
-    @posts = Post.all.reverse.last(10)
+    @posts = Post.find_tagged_with(params[:tag]).reverse if params[:tag]
+    @posts = Post.all.reverse.last(10) unless @posts
   end
   
   def show
