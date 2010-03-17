@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_filter :require_login, :except => ["index", "show"]
+  before_filter :require_login, :except => ["index", "show", "rss"]
 
   def index
     @posts = Post.find_tagged_with(params[:tag]).reverse if params[:tag]
@@ -53,4 +53,20 @@ class PostsController < ApplicationController
     flash[:notice] = "Successfully destroyed post."
     redirect_to posts_url
   end
+  
+  def rss
+    # Get the 10 most recent posts
+    @posts = Post.find :all, :limit => 10, :order => 'created_at DESC'
+    # Title for the RSS feed
+    @feed_title = "10 most recent posts"
+    # Get the absolute URL which produces the feed
+    @feed_url = "http://" + request.host_with_port + request.request_uri
+    # Description of the feed as a whole
+    @feed_description = "10 most recent posts"
+    # Set the content type to the standard one for RSS
+    response.headers['Content-Type'] = 'application/rss+xml'
+    # Render the feed using an RXML template
+    render :action => 'rss', :layout => false
+  end
+
 end

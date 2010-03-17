@@ -1,11 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :partners
-
-  map.resources :projects
-
-  map.resources :posts
-
-  map.resources :user_sessions
+  
+	map.connect 'posts/rss.xml', :controller => 'posts', :action => 'rss'
+  map.resources :user_sessions, :posts, :projects, :partners
   map.resources :users
   # The priority is based upon order of creation: first created -> highest priority.
 
