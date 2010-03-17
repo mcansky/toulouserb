@@ -1,0 +1,15 @@
+# app/config/application.yml
+defaults: &defaults
+  ganalytics: UA-15304320-1
+  logs:
+    email: email.log
+    scm: scm.log
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
