@@ -1,0 +1,20 @@
+<% title "Partner" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @partner.name %>
+</p>
+<p>
+  <strong>Url:</strong>
+  <%=h @partner.url %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @partner.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_partner_path(@partner) %> |
+  <%= link_to "Destroy", @partner, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", partners_path %>
+</p>

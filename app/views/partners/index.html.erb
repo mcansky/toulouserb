@@ -1,0 +1,21 @@
+<% title "Partners" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Url</th>
+    <th>Description</th>
+  </tr>
+  <% for partner in @partners %>
+    <tr>
+      <td><%=h partner.name %></td>
+      <td><%=h partner.url %></td>
+      <td><%=h partner.description %></td>
+      <td><%= link_to "Show", partner %></td>
+      <td><%= link_to "Edit", edit_partner_path(partner) %></td>
+      <td><%= link_to "Destroy", partner, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Partner", new_partner_path %></p>
