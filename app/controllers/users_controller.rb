@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :require_login
+  before_filter :require_login, :except => ["new", "create"]
 
   def index
     @users = User.all
@@ -10,10 +10,12 @@ class UsersController < ApplicationController
   end
   
   def new
-    @user = User.new
+    @user = User.new if User.all.size < 1
+    redirect_to root_url unless @user
   end
   
   def create
+    redirect_to root_url unless params[:user] && User.all.size < 1
     @user = User.new(params[:user])
     if @user.save
       flash[:notice] = "User successfully created."
