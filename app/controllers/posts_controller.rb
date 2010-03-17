@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.find_tagged_with(params[:tag]).reverse if params[:tag]
-    @posts = Post.all.reverse.last(10) unless @posts
+    @posts = Post.all.reverse.paginate :page => params[:page], :per_page => 2 unless @posts
   end
   
   def show

@@ -9,6 +9,6 @@
 	<%= render "post_short", :post => post %>
 <% end %>
 
-<% if current_user %>
-<p></p>
-<% end %>
+<div id="pagination">
+	<%= will_paginate @posts %>
+</div>

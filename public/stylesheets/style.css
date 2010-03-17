@@ -248,3 +248,8 @@ div.post p {
 	line-height: 15pt;
 	margin-top: 10px;
 }
+
+div#pagination {
+	font-size: 10pt;
+	margin-left: 35px;
+}
