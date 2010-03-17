@@ -220,10 +220,17 @@ div.short_post p {
 	font-size: 10pt;
 	margin-top: 10px;
 }
-div.short_post a {
-		font-size: 10pt;
+div.short_post p a {
+	font-size: 10pt;
 }
 div.short_post a.more {
 	font-size: 10pt;
-	margin-left: 80%;
+}
+div.short_post a.title {
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+div.short_post a.title:hover {
+	font-weight: bold;
 }
