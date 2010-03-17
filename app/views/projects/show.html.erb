@@ -1,5 +1,10 @@
 <div class="post">
 <h2><%= @project.name %></h2>
+<ul class="tags">
+	<% for tag in @project.tag_list %>
+		<li><%= link_to image_tag("/images/icons/tag-label.png", :title => "tag", :alt => nil, :border => 0) + " #{tag}", :action => "index", :tag => tag %></li>
+	<% end %>
+</ul>
 
 <p>
   <strong>Url:</strong>
