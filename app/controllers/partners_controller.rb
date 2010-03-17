@@ -1,4 +1,5 @@
 class PartnersController < ApplicationController
+  before_filter :require_login, :except => ["index", "show"]
   def index
     @partners = Partner.all
   end
