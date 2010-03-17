@@ -195,6 +195,10 @@ ul.tags li {
 ul.tags li img {
 	margin-bottom: -5px;
 }
+ul.tags a {
+	text-decoration: none;
+	color: #888;
+}
 
 div.short_post {
 	margin: 15px;
@@ -205,6 +209,12 @@ div.short_post {
 }
 div.short_post h3 {
 	font-size: 12pt;
+}
+
+div.short_post span.pdate {
+	font-size: 10pt;
+	margin-left: 15px;
+	color: #555;
 }
 div.short_post p {
 	font-size: 10pt;
