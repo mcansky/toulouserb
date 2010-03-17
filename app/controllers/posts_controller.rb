@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_filter :require_login, :except => ["index", "show"]
 
   def index
-    @posts = Post.all
+    @posts = Post.all.reverse.last(10)
   end
   
   def show

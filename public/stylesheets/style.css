@@ -181,3 +181,39 @@ input, textarea {
 	margin: 5px;
 	padding: 2px;
 }
+
+ul.tags {
+	display: inline;
+}
+
+ul.tags li {
+	display: inline;
+	list-style: none;
+	font-size: 9pt;
+}
+
+ul.tags li img {
+	margin-bottom: -5px;
+}
+
+div.short_post {
+	margin: 15px;
+	margin-bottom: 20px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.short_post h3 {
+	font-size: 12pt;
+}
+div.short_post p {
+	font-size: 10pt;
+	margin-top: 10px;
+}
+div.short_post a {
+		font-size: 10pt;
+}
+div.short_post a.more {
+	font-size: 10pt;
+	margin-left: 80%;
+}
