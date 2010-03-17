@@ -15,7 +15,9 @@ class PostsController < ApplicationController
   
   def create
     @post = Post.new(params[:post])
-    @post.tag_list.add(params[:post][:tag_list].split(','))
+    params[:post][:tag_list].split(',').each do |tag|
+      @post.tag_list.add(tag.gsub(' ', ''))
+    end
     if @post.save
       flash[:notice] = "Successfully created post."
       redirect_to @post
@@ -30,7 +32,12 @@ class PostsController < ApplicationController
   
   def update
     @post = Post.find(params[:id])
-    @post.tag_list.add(params[:post][:tag_list])
+    if params[:post][:tag_list]
+      @post.tag_list.each { |t| @post.tag_list.remove(t) }
+    end
+    params[:post][:tag_list].split(',').each do |tag|
+      @post.tag_list.add(tag.gsub(' ', ''))
+    end
     if @post.update_attributes(params[:post])
       flash[:notice] = "Successfully updated post."
       redirect_to @post
