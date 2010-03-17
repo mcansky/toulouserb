@@ -1,15 +1,15 @@
 <% form_for @project do |f| %>
   <%= f.error_messages %>
   <p>
-    <%= f.label :name %><br />
+    <%= f.label :name %> :
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :url %><br />
+    <%= f.label :url %> :
     <%= f.text_field :url %>
   </p>
   <p>
-    <%= f.label :description %><br />
+    <%= f.label :description %> (textile)<br />
     <%= f.text_area :description %>
   </p>
   <p><%= f.submit "Submit" %></p>
