@@ -16,7 +16,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: prod_arb3
+  username: arb3
+  password: fc50a6ce7
   pool: 5
   timeout: 5000
