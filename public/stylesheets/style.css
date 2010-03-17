@@ -212,7 +212,7 @@ div.short_post h3 {
 	font-size: 12pt;
 }
 
-div.short_post span.pdate {
+span.pdate {
 	font-size: 10pt;
 	margin-left: 15px;
 	color: #555;
@@ -238,4 +238,13 @@ div.short_post a.title {
 
 div.short_post a.title:hover {
 	font-weight: bold;
+}
+
+div.post {
+	line-height: 14pt;
+}
+div.post p {
+	font-size: 11pt;
+	line-height: 15pt;
+	margin-top: 10px;
 }
