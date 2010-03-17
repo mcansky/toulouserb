@@ -1,4 +1,3 @@
-<div class="post">
 <h2>
 	Partenaires
 	<% if current_user %>
@@ -10,4 +9,7 @@
 	<%= render "short_partner", :partner => partner %>
 <% end %>
 
+<div id="pagination">
+	<%= will_paginate @posts, :previous_label => "<< Précedent", :next_label => "Suivant >>" %>
 </div>
+
