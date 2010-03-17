@@ -1,7 +1,9 @@
-<h2>Edit post</h2>
+<div class="post">
+<h2>Edit <%= @post.name %></h2>
 <%= render :partial => 'form' %>
 
 <p>
   <%= link_to "Show", @post %> |
   <%= link_to "View All", posts_path %>
 </p>
+</div>

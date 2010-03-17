@@ -1,21 +1,13 @@
-<% title "Partners" %>
+<div class="post">
+<h2>
+	Partenaires
+	<% if current_user %>
+		<%= link_to image_tag("/images/icons/plus-small.png", :title => "New", :alt => "+", :border => 0), :action => "new" %>
+	<% end %>
+</h2>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Url</th>
-    <th>Description</th>
-  </tr>
-  <% for partner in @partners %>
-    <tr>
-      <td><%=h partner.name %></td>
-      <td><%=h partner.url %></td>
-      <td><%=h partner.description %></td>
-      <td><%= link_to "Show", partner %></td>
-      <td><%= link_to "Edit", edit_partner_path(partner) %></td>
-      <td><%= link_to "Destroy", partner, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
+<% for partner in @partners %>
+	<%= render "short_partner", :partner => partner %>
+<% end %>
 
-<p><%= link_to "New Partner", new_partner_path %></p>
+</div>

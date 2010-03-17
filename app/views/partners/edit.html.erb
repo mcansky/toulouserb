@@ -1,4 +1,5 @@
-<% title "Edit Partner" %>
+<div class="post">
+<h2>Edit <%= @partner.name %></h2>
 
 <%= render :partial => 'form' %>
 
@@ -6,3 +7,5 @@
   <%= link_to "Show", @partner %> |
   <%= link_to "View All", partners_path %>
 </p>
+
+</div>

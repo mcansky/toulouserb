@@ -1,0 +1,17 @@
+<div class="short_post">
+	<h3>
+		<%= link_to partner.name, partner, :class => "title" %>
+		<% if current_user %>
+			<%= link_to image_tag("/images/icons/pencil-small.png", :title => "Edit", :alt => "E", :border => 0), :action => "edit", :id => partner.id %>
+			<%= link_to image_tag("/images/icons/bin-metal-full.png", :title => "Delete", :alt => "D", :border => 0), partner, :confirm => 'Are you sure?', :method => :delete %>
+		<% end %>
+	</h3>
+	<ul class="tags">
+		<% for tag in partner.tag_list %>
+			<li><%= link_to image_tag("/images/icons/tag-label.png", :title => "tag", :alt => nil, :border => 0) + " #{tag}", :action => "index", :tag => tag %></li>
+		<% end %>
+	</ul>
+	<p>
+		<%= partner.description.slice(0,250) %> <%= link_to("Lire plus ...", partner, :class => "more")%>
+	</p>
+</div>
