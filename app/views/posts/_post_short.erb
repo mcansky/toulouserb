@@ -1,5 +1,10 @@
 <div class="short_post">
-	<h3><%= post.title %> @ <%= post.updated_at.strftime("%d/%m/%Y") %></h3>
+	<h3>
+		<%= post.title %> @ <%= post.updated_at.strftime("%d/%m/%Y") %>
+		<% if current_user %>
+			<%= link_to image_tag("/images/icons/pencil-small.png", :title => "Edit", :alt => "E", :border => 0), :action => "edit", :id => post.id %>
+		<% end %>
+	</h3>
 	<ul class="tags">
 		<% for tag in post.tag_list %>
 			<li><%= image_tag("/images/icons/tag-label.png", :title => "tag", :alt => nil, :border => 0) %> <%= tag %></li>
