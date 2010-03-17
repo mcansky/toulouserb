@@ -8,6 +8,19 @@ body {
 	font-family: times;
 }
 
+#logged {
+	float: right;
+	border: 1px solid #d52100;
+	background: #555;
+	padding: 10px;
+	margin: 20px;
+	color: #d52100;
+}
+
+#logged a {
+	color: #EEE;
+}
+
 #box {
 	width: 800px;
 	margin-left: auto;
