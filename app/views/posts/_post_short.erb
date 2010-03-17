@@ -3,6 +3,7 @@
 		<%= link_to post.title, post, :class => "title" %> <span class="pdate">@ <%= post.updated_at.strftime("%d/%m/%Y") %></span>
 		<% if current_user %>
 			<%= link_to image_tag("/images/icons/pencil-small.png", :title => "Edit", :alt => "E", :border => 0), :action => "edit", :id => post.id %>
+			<%= link_to image_tag("/images/icons/bin-metal-full.png", :title => "Delete", :alt => "D", :border => 0), post, :confirm => 'Are you sure?', :method => :delete %>
 		<% end %>
 	</h3>
 	<ul class="tags">
