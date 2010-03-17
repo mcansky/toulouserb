@@ -149,3 +149,22 @@ div.techno p.text {
 	line-height: 13pt;
 	margin-top: 10px;
 }
+
+#login {
+	margin: 40px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#login img {
+	margin: 10px;
+	margin-bottom: -5px;
+}
+
+input, textarea {
+	background: #FFF;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 2px;
+}

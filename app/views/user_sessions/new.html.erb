@@ -1,8 +1,8 @@
-<h1>Login</h1>
-
+<div id="login">
 <% form_for @user_session do |f| %>
   <%= f.error_messages %>
-  <p><%= f.label "Login or email" %><br /><%= f.text_field :login %></p>
-  <p><%= f.label "Password" %><br /><%= f.password_field :password %></p>
+  <p><%= image_tag("/images/icons/user-silhouette-question.png", :title => "Login or email", :alt => nil, :border => 0) %><%= f.text_field :login %></p>
+  <p><%= image_tag("/images/icons/key-solid.png", :title => "Password", :alt => nil, :border => 0) %><%= f.password_field :password %></p>
   <p><%= f.submit "Login" %></p>
 <% end %>
+</div>
