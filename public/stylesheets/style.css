@@ -59,10 +59,6 @@ h1, h2, h3, h4, a, a:hover {
 	display: inline;
 	padding: 10px;
 	margin-left: 10px;
-	border-left: 1px solid #333;
-	border-right: 1px solid #333;
-	border-bottom: 1px solid #333;
-	background: #555;
 }
 
 #menu li.active {
@@ -77,9 +73,11 @@ h1, h2, h3, h4, a, a:hover {
 	letter-spacing: 5px;
 }
 
+#menu a:hover {
+	color: #d52100;
+}
+
 #menu li:hover {
-	background: #333;
-	border-bottom: 3px solid #333;
 }
 
 #content {
