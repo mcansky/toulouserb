@@ -10,5 +10,5 @@
 <% end %>
 
 <div id="pagination">
-	<%= will_paginate @posts %>
+	<%= will_paginate @posts, :previous_label => "<< Précedent", :next_label => "Suivant >>" %>
 </div>
