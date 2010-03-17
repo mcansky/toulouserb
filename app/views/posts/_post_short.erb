@@ -1,6 +1,11 @@
 <div class="short_post">
 	<h3><%= post.title %> @ <%= post.updated_at.strftime("%d/%m/%Y") %></h3>
+	<ul class="tags">
+		<% for tag in post.tag_list %>
+			<li><%= image_tag("/images/icons/tag-label.png", :title => "tag", :alt => nil, :border => 0) %> <%= tag %></li>
+		<% end %>
+	</ul>
 	<p>
-		<%= post.slice(0,250) %><%= link_to("Lire plus ...", post)%>
+		<%= post.content.slice(0,250) %> <%= link_to("Lire plus ...", post)%>
 	</p>
 </div>

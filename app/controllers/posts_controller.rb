@@ -15,6 +15,7 @@ class PostsController < ApplicationController
   
   def create
     @post = Post.new(params[:post])
+    @post.tag_list.add(params[:post][:tag_list].split(','))
     if @post.save
       flash[:notice] = "Successfully created post."
       redirect_to @post
@@ -29,6 +30,7 @@ class PostsController < ApplicationController
   
   def update
     @post = Post.find(params[:id])
+    @post.tag_list.add(params[:post][:tag_list])
     if @post.update_attributes(params[:post])
       flash[:notice] = "Successfully updated post."
       redirect_to @post
