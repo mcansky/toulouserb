@@ -8,3 +8,7 @@
 <% for project in @projects %>
 	<%= render "short_project", :project => project %>
 <% end %>
+
+<div id="pagination">
+	<%= will_paginate @projects, :previous_label => "<< Précedent", :next_label => "Suivant >>" %>
+</div>
