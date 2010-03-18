@@ -1,7 +1,7 @@
 class PartnersController < ApplicationController
   before_filter :require_login, :except => ["index", "show"]
   def index
-    @partners = Partner.all.reverse.paginate :page => params[:page]
+    @partners = Partner.all(:conditions => ["published = ?", "t"]).reverse.paginate :page => params[:page]
   end
   
   def show

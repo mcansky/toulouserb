@@ -2,7 +2,7 @@
 	<h3>
 		<% if partner.published && current_user %>
 			<%= image_tag("/images/icons/status.png", :title => "Published", :alt => "P", :border => 0) %>
-		<% else %>
+		<% elsif current_user %>
 			<%= image_tag("/images/icons/status-offline.png", :title => "Draft", :alt => "D", :border => 0) %>
 		<% end %>
 		<%= link_to partner.name, partner, :class => "title" %>

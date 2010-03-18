@@ -1,8 +1,8 @@
 class ProjectsController < ApplicationController
   before_filter :require_login, :except => ["index", "show"]
   def index
-    @projects = Project.find_tagged_with(params[:tag]).reverse.paginate :page => params[:page] if params[:tag]
-    @projects = Project.all.reverse.paginate :page => params[:page] unless @projects
+    @projects = Project.find_tagged_with(params[:tag], :conditions => ["published = ?", "t"]).reverse.paginate :page => params[:page] if params[:tag]
+    @projects = Project.all(:conditions => ["published = ?", "t"]).reverse.paginate :page => params[:page] unless @projects
   end
   
   def show

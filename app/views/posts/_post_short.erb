@@ -2,7 +2,7 @@
 	<h3>
 		<% if post.published && current_user %>
 			<%= image_tag("/images/icons/status.png", :title => "Published", :alt => "P", :border => 0) %>
-		<% else %>
+		<% elsif current_user %>
 			<%= image_tag("/images/icons/status-offline.png", :title => "Draft", :alt => "D", :border => 0) %>
 		<% end %>
 		<%= link_to post.title, post, :class => "title" %> <span class="pdate">@ <%= post.updated_at.strftime("%d/%m/%Y") %></span>
