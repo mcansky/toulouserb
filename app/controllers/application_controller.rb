@@ -15,6 +15,9 @@ class ApplicationController < ActionController::Base
 			redirect_to root_url
 		end
 	end
+	
+	def about
+  end
 
 	private
 	def current_user_session
