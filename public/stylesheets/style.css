@@ -260,3 +260,7 @@ div#pagination {
 	font-size: 10pt;
 	margin-left: 35px;
 }
+
+blockquote p {
+	font-style: italic;
+}
