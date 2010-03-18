@@ -268,3 +268,22 @@ blockquote p {
 div.clear {
 	clear: both;
 }
+div.left_side {
+	float: left;
+	width: 50%;
+}
+div.right_side {
+	float: right;
+	margin-right: 20px;
+	width: 30%;
+	border: 1px solid #555;
+	background: #222;
+	padding: 0;
+	color: #EEE;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+div.right_side {
+
+}
