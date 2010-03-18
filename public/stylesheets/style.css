@@ -264,3 +264,7 @@ div#pagination {
 blockquote p {
 	font-style: italic;
 }
+
+div.clear {
+	clear: both;
+}
