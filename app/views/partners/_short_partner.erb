@@ -1,5 +1,10 @@
 <div class="short_post">
 	<h3>
+		<% if partner.published && current_user %>
+			<%= image_tag("/images/icons/status.png", :title => "Published", :alt => "P", :border => 0) %>
+		<% else %>
+			<%= image_tag("/images/icons/status-offline.png", :title => "Draft", :alt => "D", :border => 0) %>
+		<% end %>
 		<%= link_to partner.name, partner, :class => "title" %>
 		<% if current_user %>
 			<%= link_to image_tag("/images/icons/pencil-small.png", :title => "Edit", :alt => "E", :border => 0), :action => "edit", :id => partner.id %>

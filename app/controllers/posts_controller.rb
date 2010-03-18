@@ -2,8 +2,12 @@ class PostsController < ApplicationController
   before_filter :require_login, :except => ["index", "show", "rss"]
 
   def index
-    @posts = Post.find_tagged_with(params[:tag]).reverse.paginate :page => params[:page] if params[:tag]
-    @posts = Post.all.reverse.paginate :page => params[:page] unless @posts
+    @posts = Post.find_tagged_with(params[:tag], :conditions => "published = true").reverse.paginate :page => params[:page] if params[:tag]
+    if !current_user
+      @posts = Post.all(:conditions => "published == 1").reverse.paginate :page => params[:page] unless @posts
+    else
+      @posts = Post.all.reverse.paginate :page => params[:page] unless @posts
+    end
   end
   
   def show
