@@ -114,6 +114,13 @@ h1, h2, h3, h4, a, a:hover {
 }
 #content a:hover { text-decoration: underline; }
 
+#content ul {
+	margin-left: 20px;
+}
+
+#content ul.tags {
+	margin-left: 0px;
+}
 div.techno {
 	margin-top: 20px;
 }
