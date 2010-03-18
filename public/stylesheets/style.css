@@ -116,6 +116,7 @@ h1, h2, h3, h4, a, a:hover {
 
 #content ul {
 	margin-left: 20px;
+	font-size: 11pt;
 }
 
 #content ul.tags {
