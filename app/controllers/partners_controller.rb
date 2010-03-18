@@ -1,12 +1,16 @@
 class PartnersController < ApplicationController
   before_filter :require_login, :except => ["index", "show"]
   def index
-    @partners = Partner.all(:conditions => ["published = ?", "t"]).reverse.paginate :page => params[:page]
+    conditions = Array.new
+    if !current_user
+      conditions = ["published = ?", "t"]
+    end
+    @partners = Partner.all(:conditions => conditions).reverse.paginate :page => params[:page]
   end
   
   def show
     @partner = Partner.find(params[:id])
-    redirect_to root_url unless @partner.published
+    redirect_to root_url unless @partner.published || current_user
   end
   
   def new

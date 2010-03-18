@@ -11,7 +11,7 @@ class ProjectsController < ApplicationController
   
   def show
     @project = Project.find(params[:id])
-    redirect_to root_url unless @project.published
+    redirect_to root_url unless @project.published || current_user
   end
   
   def new

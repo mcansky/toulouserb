@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   
   def show
     @post = Post.find(params[:id])
-    redirect_to root_url unless @post.published
+    redirect_to root_url unless @post.published || current_user
   end
   
   def new
