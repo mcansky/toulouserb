@@ -37,7 +37,7 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     if params[:project][:tag_list]
-      @project.tag_list.each { |t| @post.tag_list.remove(t) }
+      @project.tag_list.each { |t| @project.tag_list.remove(t) }
     end
     params[:project][:tag_list].split(',').each do |tag|
       @project.tag_list.add(tag.gsub(' ', ''))
