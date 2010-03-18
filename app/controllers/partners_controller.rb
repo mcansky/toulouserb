@@ -6,6 +6,7 @@ class PartnersController < ApplicationController
   
   def show
     @partner = Partner.find(params[:id])
+    redirect_to root_url unless @partner.published
   end
   
   def new

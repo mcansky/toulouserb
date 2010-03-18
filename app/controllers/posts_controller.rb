@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   
   def show
     @post = Post.find(params[:id])
+    redirect_to root_url unless @post.published
   end
   
   def new
