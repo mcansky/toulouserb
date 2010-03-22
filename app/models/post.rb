@@ -3,7 +3,6 @@ class Post < ActiveRecord::Base
   has_attached_file :doc,
     :url  => "/posts/doc/:id",
     :path => ":rails_root/public/system/:id/:basename.:extension"
-  validates_attachment_presence :doc
   validates_attachment_size :doc, :less_than => 5.megabytes
   validates_attachment_content_type :doc, :content_type => ['application/pdf']
   acts_as_taggable
