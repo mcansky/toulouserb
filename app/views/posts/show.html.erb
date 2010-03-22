@@ -9,8 +9,8 @@
   <%= @post.content %>
 </p>
 <p>
-	<% if @post.doc %>
-		File : <%= link_to image_tag("/images/icons/document-pdf.png", :title => nil, :alt => nil, :border => 0), @post.doc.url %>
+	<% if @post.doc.exists? %>
+		Fichier : <%= link_to image_tag("/images/icons/document-pdf.png", :title => nil, :alt => nil, :border => 0), @post.doc.url %>
 	<% end %>
 </p>
 
