@@ -73,5 +73,10 @@ class PostsController < ApplicationController
     # Render the feed using an RXML template
     render :action => 'rss', :layout => false
   end
+  
+  def file
+    @post = Post.find(params[:id])
+    send_file @post.doc.path, :type => @post.doc_content_type, :disposition => 'attachment'
+  end
 
 end
