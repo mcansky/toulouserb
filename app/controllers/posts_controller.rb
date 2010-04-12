@@ -7,7 +7,7 @@ class PostsController < ApplicationController
       conditions = ["published = ?", "t"]
     end
     @posts = Post.find_tagged_with(params[:tag], :conditions => conditions).paginate :page => params[:page] if params[:tag]
-    @posts = Post.all(:conditions => conditions).paginate :page => params[:page] unless @posts
+    @posts = Post.all(:conditions => conditions, :order => "updated_at DESC").paginate :page => params[:page] unless @posts
   end
   
   def show
