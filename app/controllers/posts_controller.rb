@@ -6,8 +6,8 @@ class PostsController < ApplicationController
     if !current_user
       conditions = ["published = ?", "t"]
     end
-    @posts = Post.find_tagged_with(params[:tag], :conditions => conditions).reverse.paginate :page => params[:page] if params[:tag]
-    @posts = Post.all(:conditions => conditions).reverse.paginate :page => params[:page] unless @posts
+    @posts = Post.find_tagged_with(params[:tag], :conditions => conditions).paginate :page => params[:page] if params[:tag]
+    @posts = Post.all(:conditions => conditions).paginate :page => params[:page] unless @posts
   end
   
   def show
