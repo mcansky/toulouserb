@@ -103,9 +103,21 @@ h1, h2, h3, h4, a, a:hover {
 #content h2 {
 	font-size: 14pt;
 }
-#content p.intro {
+p, #content p.intro {
 	font-size: 11pt;
 	line-height: 13pt;
+}
+
+#content div.short_blog_post,  #content div.short_post{
+	margin-top: 15px;
+}
+
+#content div.short_blog_post ul.tags, #content div.short_post ul.tags {
+	margin-left: 20px;
+}
+
+#content div.short_blog_post p, #content div.short_post p {
+	margin-top: 5px;
 }
 
 #content a {
