@@ -16,7 +16,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
+  adapter: postgresql
   database: prod_arb3
   username: arb3
   password: fc50a6ce7
