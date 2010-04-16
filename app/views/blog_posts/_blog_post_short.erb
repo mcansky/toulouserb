@@ -1,0 +1,22 @@
+<div class="short_blog_post">
+	<h3>
+		<% if blog_post.published && current_user %>
+			<%= image_tag("/images/icons/status.png", :title => "Published", :alt => "P", :border => 0) %>
+		<% elsif current_user %>
+			<%= image_tag("/images/icons/status-offline.png", :title => "Draft", :alt => "D", :border => 0) %>
+		<% end %>
+		<%= link_to blog_post.title, blog_post, :class => "title" %> <span class="pdate">@ <%= blog_post.updated_at.strftime("%d/%m/%Y") %></span>
+		<% if current_user %>
+			<%= link_to image_tag("/images/icons/pencil-small.png", :title => "Edit", :alt => "E", :border => 0), :action => "edit", :id => blog_post.id %>
+			<%= link_to image_tag("/images/icons/bin-metal-full.png", :title => "Delete", :alt => "D", :border => 0), blog_post, :confirm => 'Are you sure?', :method => :delete %>
+		<% end %>
+	</h3>
+	<ul class="tags">
+		<% for tag in blog_post.tag_list %>
+			<li><%= link_to image_tag("/images/icons/tag-label.png", :title => "tag", :alt => nil, :border => 0) + " #{tag}", :action => "index", :tag => tag %></li>
+		<% end %>
+	</ul>
+	<p>
+		<%= blog_post.content(:plain).slice(0,250) %> <%= link_to("Lire plus ...", blog_post, :class => "more")%>
+	</p>
+</div>

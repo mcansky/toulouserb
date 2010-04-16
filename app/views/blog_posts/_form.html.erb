@@ -1,8 +1,29 @@
-<% form_for @blog_post do |f| %>
+<% form_for @blog_post, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
+<div class="left_side">
   <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.label :title %> :
+    <%= f.text_field :title %>
+  </p>
+	<p>
+		<%= f.label :tags %> :
+		<%= f.text_field :tag_list %>
+	</p>
+	<p>
+		<%= f.label :file %> :
+		<%= f.file_field :doc %>
+	</p>
+</div>
+<div class="right_side">
+	  <p>
+	    <%= f.label :published %> :
+	    <%= f.check_box :published %>
+	  </p>
+</div>
+<div class="clear"></div>
+  <p>
+    <%= f.label :content %> (textile)<br />
+    <%= f.text_area :content, :cols => "80" %>
   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>

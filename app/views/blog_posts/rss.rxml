@@ -1,0 +1,20 @@
+xml.instruct!
+xml.rss("version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/") do
+  xml.channel do
+    xml.title @feed_title
+    xml.link @feed_url
+    xml.description @feed_description
+    xml.language "fr-fr"
+
+    for blog_post in @blog_posts
+      xml.item do
+        xml.pubDate blog_post.created_at
+        xml.title h(blog_post.title)
+        xml.link request.host_with_port + request.request_uri + blog_post.id.to_s
+        xml.description do
+          xml << blog_post.content
+        end
+      end
+    end
+  end
+end

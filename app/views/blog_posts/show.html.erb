@@ -1,12 +1,17 @@
-<% title "Blog Post" %>
-
+<div class="blog_post">
+<h2><%= @blog_post.title %> <span class="pdate">@ <%= @blog_post.updated_at.strftime("%d/%m/%Y") %></span></h2>
+<ul class="tags">
+	<% for tag in @blog_post.tag_list %>
+		<li><%= link_to image_tag("/images/icons/tag-label.png", :title => "tag", :alt => nil, :border => 0) + " #{tag}", :action => "index", :tag => tag %></li>
+	<% end %>
+</ul>
 <p>
-  <strong>Name:</strong>
-  <%=h @blog_post.name %>
+  <%= @blog_post.content %>
+</p>
+<p>
+	<% if @blog_post.doc.exists? %>
+		Fichier : <%= link_to image_tag("/images/icons/document-pdf.png", :title => nil, :alt => nil, :border => 0), @blog_post.doc.url %>
+	<% end %>
 </p>
 
-<p>
-  <%= link_to "Edit", edit_blog_post_path(@blog_post) %> |
-  <%= link_to "Destroy", @blog_post, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", blog_posts_path %>
-</p>
+</div>

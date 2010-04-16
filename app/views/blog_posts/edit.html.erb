@@ -1,8 +1,9 @@
-<% title "Edit Blog Post" %>
-
+<div class="blog_post">
+<h2>Edit <%= @blog_post.title %></h2>
 <%= render :partial => 'form' %>
 
 <p>
   <%= link_to "Show", @blog_post %> |
   <%= link_to "View All", blog_posts_path %>
 </p>
+</div>
