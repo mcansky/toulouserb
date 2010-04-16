@@ -1,0 +1,17 @@
+<% title "Blog Posts" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for blog_post in @blog_posts %>
+    <tr>
+      <td><%=h blog_post.name %></td>
+      <td><%= link_to "Show", blog_post %></td>
+      <td><%= link_to "Edit", edit_blog_post_path(blog_post) %></td>
+      <td><%= link_to "Destroy", blog_post, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Blog Post", new_blog_post_path %></p>
