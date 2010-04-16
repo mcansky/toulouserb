@@ -61,7 +61,7 @@ class PostsController < ApplicationController
   
   def rss
     # Get the 10 most recent posts
-    @posts = Post.find :all, :limit => 10, :order => 'created_at DESC'
+    @posts = Post.find :all, :limit => 10, :conditions => ["published = ?", "t"], :order => 'created_at DESC'
     # Title for the RSS feed
     @feed_title = "10 most recent posts"
     # Get the absolute URL which produces the feed
