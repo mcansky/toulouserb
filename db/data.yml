@@ -1,0 +1,284 @@
+
+--- 
+users: 
+  columns: 
+  - id
+  - email
+  - login
+  - crypted_password
+  - password_salt
+  - persistence_token
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - riboulet@gmail.com
+    - mcansky
+    - 15a64ed92534cebc44e3c8497d5ef7c093d5d70fb3dc58c6d99133a0fa1fe48c99ad559868344741fc2c79f2d9b9356d3588a5c066d8a2bc62dc8992f03505bd
+    - o9N-vHVwpO-QMhpDhGrL
+    - d324fd7df198910b8703896175122f89297567e0b078cfee7cfe999cd82baf23031da2221e50063dba5e830f73cd2348ee77b95690dc4f02106049d1fe00c541
+    - 2010-03-17 19:29:22.704986
+    - 2010-03-17 19:29:22.704986
+
+--- 
+tags: 
+  columns: 
+  - id
+  - name
+  records: 
+  - - "1"
+    - git
+  - - "2"
+    - glmf
+  - - "3"
+    - ruby
+  - - "4"
+    - rails
+  - - "5"
+    - thinlila
+  - - "6"
+    - projets
+  - - "7"
+    - cucumber
+
+--- 
+taggings: 
+  columns: 
+  - id
+  - tag_id
+  - taggable_id
+  - taggable_type
+  - created_at
+  records: 
+  - - "3"
+    - "1"
+    - "2"
+    - Post
+    - 2010-03-17 20:08:29.575617
+  - - "4"
+    - "2"
+    - "2"
+    - Post
+    - 2010-03-17 20:08:29.578211
+  - - "5"
+    - "2"
+    - "3"
+    - Post
+    - 2010-03-18 10:23:35.272793
+  - - "6"
+    - "3"
+    - "1"
+    - Project
+    - 2010-03-18 14:26:41.967212
+  - - "7"
+    - "3"
+    - "2"
+    - Project
+    - 2010-03-18 14:29:44.036003
+  - - "8"
+    - "4"
+    - "2"
+    - Project
+    - 2010-03-18 14:29:44.040804
+  - - "9"
+    - "3"
+    - "3"
+    - Project
+    - 2010-03-18 14:47:11.808559
+  - - "10"
+    - "4"
+    - "3"
+    - Project
+    - 2010-03-18 14:47:11.832661
+  - - "11"
+    - "1"
+    - "3"
+    - Project
+    - 2010-03-18 14:47:11.835295
+  - - "12"
+    - "3"
+    - "4"
+    - Post
+    - 2010-03-20 21:40:43.302072
+  - - "13"
+    - "5"
+    - "4"
+    - Post
+    - 2010-03-20 21:40:43.51118
+  - - "14"
+    - "6"
+    - "4"
+    - Post
+    - 2010-03-20 21:40:43.581064
+  - - "15"
+    - "3"
+    - "5"
+    - Post
+    - 2010-03-22 20:50:19.501651
+  - - "16"
+    - "4"
+    - "5"
+    - Post
+    - 2010-03-22 20:50:19.558458
+  - - "17"
+    - "3"
+    - "6"
+    - Post
+    - 2010-03-22 21:52:46.179515
+  - - "18"
+    - "7"
+    - "6"
+    - Post
+    - 2010-03-22 21:52:46.217372
+
+--- 
+projects: 
+  columns: 
+  - id
+  - name
+  - url
+  - description
+  - created_at
+  - updated_at
+  - published
+  records: 
+  - - "1"
+    - ThinLila
+    - http://github.com/mcansky/ThinLila
+    - "Notre infrastructure d'h\xC3\xA9bergement RubyOnRails repose sur Nginx et Thin. Afin de g\xC3\xA9rer facilement les multiples instances de ce dernier nous avons d\xC3\xA9velopp\xC3\xA9 un petit outil de gestion.\r\n\
+      \r\n\
+      ThinLila permet de g\xC3\xA9rer facilement des instances du serveur Thin qui g\xC3\xA8rent des applications 'packag\xC3\xA9es' avec \"Bundler\":http://github.com/carlhuda/bundler.\r\n\
+      \r\n\
+      Bundler permet d'isoler une application avec ses d\xC3\xA9pendances Ruby (rubygems), de fa\xC3\xA7on \xC3\xA0 assurer que plusieurs applications peuvent cohabiter dans un m\xC3\xAAme espace.\r\n\
+      \r\n\
+      Ecrit en Ruby ThinLila est publi\xC3\xA9 sous licence MIT."
+    - 2010-03-18 14:26:41.613136
+    - 2010-03-18 18:25:03.520154
+    - true
+  - - "2"
+    - McBasic Auth
+    - http://github.com/mcansky/McBasic-Auth
+    - "L'identification des utilisateurs dans une application RubyOnRails est souvent g\xC3\xA9r\xC3\xA9e de la m\xC3\xAAme fa\xC3\xA7on d'une application \xC3\xA0 l'autre.\r\n\
+      \r\n\
+      Pour nous faciliter la vie nous avons cr\xC3\xA9\xC3\xA9 un g\xC3\xA9n\xC3\xA9rateur rails qui nous pr\xC3\xA9pare les classes n\xC3\xA9cessaires \xC3\xA0 la gestion de l'identification des utilisateurs. Ce g\xC3\xA9n\xC3\xA9rateur repose sur le plugin \"AuthLogic\":http://github.com/binarylogic/authlogic .\r\n\
+      \r\n\
+      Ce code est publi\xC3\xA9 sous licence MIT."
+    - 2010-03-18 14:29:44.032668
+    - 2010-03-18 15:36:24.670254
+    - true
+  - - "3"
+    - Aq3
+    - ""
+    - "Aq3 est un projet sur lequel nous planchons actuellement pour compl\xC3\xA9ter nos outils de gestion de projets.\r\n\
+      \r\n\
+      Il est actuellement en phase active de d\xC3\xA9veloppement mais nous mettrons \xC3\xA0 jour cette page quand l'avancement du projet le permettra."
+    - 2010-03-18 14:47:11.422393
+    - 2010-03-18 15:36:17.566766
+    - true
+
+--- 
+partners: 
+  columns: 
+  - id
+  - name
+  - url
+  - description
+  - created_at
+  - updated_at
+  - published
+  records: 
+  - - "1"
+    - Libre Informatique
+    - http://www.libre-informatique.fr/
+    - "\"Libre Informatique\":http://www.libre-informatique.fr/ est notre partenaire r\xC3\xA9gulier sur des projets de billetterie en ligne. Nous avons d\xC3\xA9velopp\xC3\xA9 ensemble un outil en RubyOnRails pour g\xC3\xA9rer une boutique en ligne de billets pour \xC3\xA9v\xC3\xA8nements.\r\n\
+      \r\n\
+      bq. Libre Informatique est n\xC3\xA9e de l'exp\xC3\xA9rience de Baptiste SIMON. Son activit\xC3\xA9 se trouve \xC3\xA0 la crois\xC3\xA9e de l'informatique libre et de votre coeur de m\xC3\xA9tier."
+    - 2010-03-18 15:42:33.198642
+    - 2010-03-18 17:44:20.461208
+    - false
+
+--- 
+posts: 
+  columns: 
+  - id
+  - title
+  - content
+  - created_at
+  - updated_at
+  - published
+  - doc_file_name
+  - doc_content_type
+  - doc_file_size
+  - doc_updated_at
+  records: 
+  - - "2"
+    - "GLMF : Git"
+    - "Nous avons publi\xC3\xA9 deux articles d'introduction et de prise en main \xC3\xA0 Git en 2008 et 2009. Ils sont d\xC3\xA9sormais publi\xC3\xA9s sur le site UnixGarden.\r\n\
+      \r\n\
+      * \"Git pour les (futurs) barbus\":http://www.unixgarden.com/index.php/administration-systeme/git-pour-les-futurs-barbus\r\n\
+      * \"Git, les mains dans le cambouis\":http://www.unixgarden.com/index.php/administration-systeme/git-les-mains-dans-le-cambouis\r\n\
+      \r\n\
+      Le premier \xC3\xA9tait paru initialement dans le wiki de GCU.info sous la forme d'une rapide introduction. Apr\xC3\xA8s plusieurs demandes et suggestions nous avions donc envoy\xC3\xA9 une deuxi\xC3\xA8me version au r\xC3\xA9dacteur en chef de GNU Linux Magazine France.\r\n\
+      \r\n\
+      Cet article f\xC3\xBBt rapidement suivi d'un deuxi\xC3\xA8me afin de pr\xC3\xA9senter des aspects plus pouss\xC3\xA9s mais tr\xC3\xA8s utiles de la commande git."
+    - 2010-03-17 20:08:29.572307
+    - 2010-03-18 15:36:59.608382
+    - true
+    - 
+    - 
+    - 
+    - 
+  - - "3"
+    - "GLMF : Fdm"
+    - "Interess\xC3\xA9s par les outils de manipulation et traitement de flux de courriers electroniques nous avons \xC3\xA9crit une petite introduction \xC3\xA0 FDM.\r\n\
+      \r\n\
+      Fdm est utilisable comme remplacement \xC3\xA0 Procmail et fetchmail avec une syntaxe fort pratique \xC3\xA0 utiliser.\r\n\
+      \r\n\
+      Il est disponible sur le site Unix Garden : \"Fdm du rififi dans les tuyaux\":http://www.unixgarden.com/index.php/administration-systeme/fdm-du-rififi-dans-les-tuyaux"
+    - 2010-03-18 10:23:35.230696
+    - 2010-03-18 15:36:38.105852
+    - true
+    - 
+    - 
+    - 
+    - 
+  - - "4"
+    - ThinLila v0.1
+    - "Une premi\xC3\xA8re release de \"ThinLila\":http://www.arbousier.info/projects/1 est disponible sur la \"page GitHub du projet\":http://github.com/mcansky/ThinLila/downloads . Nous vous invitons \xC3\xA0 tester et nous renvoyer bugs et critiques.\r\n\
+      \r\n\
+      Pour rappel ThinLila est un petit script Ruby qui permet de g\xC3\xA9rer les instances de \"Thin\":http://code.macournoyer.com/thin/ utilis\xC3\xA9es pour propulser des applications web packag\xC3\xA9es avec \"bundler\":http://github.com/carlhuda/bundler."
+    - 2010-03-20 21:40:41.854243
+    - 2010-03-20 21:43:42.196384
+    - true
+    - 
+    - 
+    - 
+    - 
+  - - "5"
+    - "GLMF : Identification avec RubyOnRails"
+    - "A la suite des articles pr\xC3\xA9c\xC3\xA9dents sur Rails voici un article pr\xC3\xA9sentant une solution pour mettre en place de l'identification (ou authentification). Cet article introduit le lecteur au plugin \"AuthLogic\":http://github.com/binarylogic/authlogic : son fonctionnement et son int\xC3\xA9gration \xC3\xA0 une application. Il a \xC3\xA9t\xC3\xA9 publi\xC3\xA9 dans le GNU Linux Magazine France num\xC3\xA9ro 126 (Avril 2010)."
+    - 2010-03-22 20:50:18.778219
+    - 2010-04-12 09:36:39.027537
+    - true
+    - 
+    - 
+    - 
+    - 
+  - - "6"
+    - "GLMF : Cucumis sativus"
+    - "RubyOnRails avait pouss\xC3\xA9 le TDD sur la sc\xC3\xA8ne, et beaucoup de jolis projets, articles, livres et m\xC3\xA9thodes ont emerg\xC3\xA9 depuis.\r\n\
+      \r\n\
+      Parmis eux le BDD, ou 'Behaviour Driven Development' essaye d'aider \xC3\xA0 r\xC3\xA9duire le gap entre d\xC3\xA9veloppeurs et clients en fournissant un pont entre les deux. Ce pont consiste \xC3\xA0 d\xC3\xA9crire l'application selon des \"comportements\" qu'elle devra avoir.\r\n\
+      \r\n\
+      Un des outils disponible pour faire cela est \"Cucumber\":http://github.com/aslakhellesoy/cucumber , \xC3\xA9crit en Ruby, utilisable avec de nombreuses frameworks ou aucun (juste du Ruby) et de nombreux langages.\r\n\
+      \r\n\
+      Nous avons donc \xC3\xA9crit un article d'introduction \xC3\xA0 Cucumber pour GLMF, publi\xC3\xA9 dans le num\xC3\xA9ro ### du mois de ????.\r\n\
+      \r\n\
+      Et vous pouvez trouver ci joint une courte 'cheat sheet' pour Cucumber. Bonne lecture."
+    - 2010-03-22 21:52:45.886901
+    - 2010-03-22 21:52:45.886901
+    - false
+    - cheat_sheet.pdf
+    - application/pdf
+    - "27238"
+    - 2010-03-22 21:52:45.875386
