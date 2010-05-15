@@ -40,12 +40,10 @@ pageTracker._trackPageview();
 		</div>
 		<div id="menu">
 			<ul>
-				<li><%= link_to "Index", root_url %></li>
-				<li><%= link_to "Articles", posts_path %>
-				<li><%= link_to "Projets", projects_path %></li>
-				<li><%= link_to "Partenaires", partners_path %></li>
-				<li><%= link_to "Blog", blog_posts_path %>
-				<li><%= link_to "A propos", about_path %></li>
+				<li><%= link_to t(:events), posts_path %></li>
+				<li><%= link_to t(:users), users_path %></li>
+				<li><%= link_to t(:projects), projects_path %></li>
+				<li><%= link_to t(:about), about_path %></li>
 			</ul>
 		</div>
 	
@@ -53,7 +51,7 @@ pageTracker._trackPageview();
 			<%= yield %>
 		</div>
 		<div id="footer">
-			<p>Arbousier.info, (c) Thomas Riboulet 2009 - 2010.</p>
+			<p>Toulouse.rb</p>
 		</div>
 	</div>
 	
