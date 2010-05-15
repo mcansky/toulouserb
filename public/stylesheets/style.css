@@ -22,7 +22,7 @@ body {
 }
 
 #box {
-	width: 800px;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	border-right: 1px solid #222;
@@ -43,7 +43,7 @@ h1, h2, h3, h4, a, a:hover {
 #topbar h1 {
 	width: 100%;
 	background: #d52100;
-	text-align: center;
+	text-align: left;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #c41000;
@@ -51,10 +51,10 @@ h1, h2, h3, h4, a, a:hover {
 
 #topbar h1 a {
 	font-family: times;
-	text-transform: uppercase;
+	margin-left: 10%;
 	color: #FFF;
 	text-decoration: none;
-	letter-spacing: 20px;
+	letter-spacing: 15px;
 	font-size: 17pt;
 }
 
