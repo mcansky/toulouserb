@@ -57,7 +57,7 @@ h1, h2, h3, h4, a, a:hover {
 
 #menu {
 	background: #333;
-	border-bottom: 4px solid #d52100;
+	border-bottom: 4px solid #3288B9;
 }
 
 #menu ul {
@@ -95,22 +95,25 @@ h1, h2, h3, h4, a, a:hover {
 }
 
 #menu a:hover {
-	color: #d52100;
+	color: #333;
 }
 
 #menu li:hover {
 }
 
 #content {
-	background: #FFF;
+	background: #333;
+	color: #EEE;
 	padding: 20px;
 }
 
 #content h1 {
 	font-size: 16pt;
+	color: #3288B9;
 }
 #content h2 {
 	font-size: 14pt;
+	color: #3288B9;
 }
 p, #content p.intro {
 	font-size: 11pt;
@@ -132,6 +135,7 @@ p, #content p.intro {
 #content a {
 	font-weight: normal;
 	text-decoration: none;
+	color: #3288B9;
 }
 #content a:hover { text-decoration: underline; }
 
