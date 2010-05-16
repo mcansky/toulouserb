@@ -3,10 +3,17 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
+  before_filter :set_menu_vars
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password
+
+  def set_menu_vars
+    @users_count = User.all.count
+    @events_count = Post.all.count
+    @projects_count = Project.all.count
+  end
 
   def require_login
 		if current_user

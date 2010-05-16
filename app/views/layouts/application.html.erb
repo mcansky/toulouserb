@@ -15,7 +15,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 <script type="text/javascript">
 try {
 var pageTracker = _gat._getTracker(<%= Settings.ganalytics %>);
-pageTracker._setDomainName(".arbousier.info");
+pageTracker._setDomainName(".toulouserb.org");
 pageTracker._trackPageview();
 } catch(err) {}</script>
 
@@ -40,9 +40,9 @@ pageTracker._trackPageview();
 		</div>
 		<div id="menu">
 			<ul>
-				<li><%= link_to t(:events), posts_path %></li>
-				<li><%= link_to t(:users), users_path %></li>
-				<li><%= link_to t(:projects), projects_path %></li>
+				<li><span class="count"><%= @events_count %></span><%= link_to t(:events), posts_path %></li>
+				<li><span class="count"><%= @users_count %></span><%= link_to t(:users), users_path %></li>
+				<li><span class="count"><%= @projects_count %></span><%= link_to t(:projects), projects_path %></li>
 				<li><%= link_to t(:about), about_path %></li>
 			</ul>
 		</div>
