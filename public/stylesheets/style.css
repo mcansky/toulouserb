@@ -25,12 +25,10 @@ body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	border-right: 1px solid #222;
-	border-left: 1px solid #222;
 }
 
 #topbar {
-	background: #d52100;
+	background: #333;
 	text-align: center;
 	width: 100%;
 	height: 100px;
@@ -42,11 +40,10 @@ h1, h2, h3, h4, a, a:hover {
 
 #topbar h1 {
 	width: 100%;
-	background: #d52100;
+	background: #333;
 	text-align: left;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	border-bottom: 1px solid #c41000;
 }
 
 #topbar h1 a {
@@ -59,19 +56,31 @@ h1, h2, h3, h4, a, a:hover {
 }
 
 #menu {
-	background: #222;
+	background: #333;
+	border-bottom: 4px solid #d52100;
 }
 
 #menu ul {
 	padding: 10px;
-	padding-top: 20px;
 }
 
 #menu li {
 	list-style: none;
 	display: inline;
-	padding: 10px;
 	margin-left: 10px;
+}
+
+#menu li span.count {
+	background: #EEE;
+	padding: 5px;
+	color: #d52100;
+	font-size: 10pt;
+}
+
+#menu li a {
+	padding: 5px;
+	font-size: 10pt;
+	background: #d52100;
 }
 
 #menu li.active {
