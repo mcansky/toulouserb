@@ -21,10 +21,14 @@ class ApplicationController < ActionController::Base
   end
 
   def set_menu_vars
+    conditions = Array.new
+    if !current_user
+      conditions = ["published = ?", "t"]
+    end
     @users_count = User.all.size
-    @events_count = Event.all.size
+    @events_count = Event.find(:conditions => conditions).size
     @projects_count = Project.all.size
-    @posts_count = BlogPost.all.size
+    @posts_count = BlogPost.find(:conditions => conditions).size
     check_layout
   end
 
