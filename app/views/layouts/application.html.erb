@@ -43,8 +43,8 @@ pageTracker._trackPageview();
 				<li><%= link_to t(:root), root_url %></li>
 				<li><span class="count"><%= @events_count %></span><%= link_to t(:events), events_path %></li>
 				<li><span class="count"><%= @posts_count %></span><%= link_to t(:blog_posts), blog_posts_path %></li>
-				<li><span class="count"><%= @users_count %></span><%= link_to t(:users), users_path %></li>
-				<!-- <li><span class="count"><%= @projects_count %></span><%= link_to t(:projects), projects_path %></li> -->
+				<!--<li><span class="count"><%= @users_count %></span><%= link_to t(:users), users_path %></li>
+				 <li><span class="count"><%= @projects_count %></span><%= link_to t(:projects), projects_path %></li> -->
 				<li><%= link_to t(:about), :controller => "pages", :action => "show", :id => "about" %></li>
 			</ul>
 		</div>

@@ -11,12 +11,12 @@ class UsersController < ApplicationController
   end
   
   def new
-    @user = User.new if User.all.size < 1
+    @user = User.new if User.all.size < 1 || current_user
     redirect_to root_url unless @user
   end
   
   def create
-    redirect_to root_url unless params[:user] && User.all.size < 1
+    redirect_to root_url unless (params[:user] && current_user) || User.all.size < 1
     @user = User.new(params[:user])
     if @user.save
       flash[:notice] = "User successfully created."

@@ -11,3 +11,11 @@ fr:
   last_tweets: "Tweets"
   about: "A propos"
   root: "Index"
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      short: "%b %d"
+      long: "%B %d, %Y"
+    order: [ :day, :month, :year ]
+    month_names: [~, Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
+    abbr_month_names: [~, Jan, Fév, Mar, Avr, Mai, Jui, Jul, Aug, Sep, Oct, Nov, Dec]
