@@ -3,10 +3,6 @@
 	Blog posts
 		<%= link_to image_tag("/images/icons/plus-small.png", :title => "New article", :alt => "+", :border => 0), new_blog_post_path %>
 </h2>
-	<% else %>
-	<p>
-		Ce qui est trop court pour un article est publié ici : lien vers un article ou une brève sur un sujet intéressant, avis, idées, réactions à l'actualité technique ...
-	</p>
 	<% end %>
 
 <% for blog_post in @blog_posts %>
