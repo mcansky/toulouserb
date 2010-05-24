@@ -1,0 +1,9 @@
+<div class="event">
+<h2>Edit <%= @event.title %></h2>
+<%= render :partial => 'form' %>
+
+<p>
+  <%= link_to "Show", @event %> |
+  <%= link_to "View All", events_path %>
+</p>
+</div>

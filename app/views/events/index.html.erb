@@ -1,0 +1,14 @@
+<h2>
+	<%= t(:events) %>
+	<% if current_user %>
+		<%= link_to image_tag("/images/icons/plus-small.png", :title => "New event", :alt => "+", :border => 0), new_event_path %>
+	<% end %>
+</h2>
+
+<% for event in @events %>
+	<%= render "event_short", :event => event %>
+<% end %>
+
+<div id="pagination">
+	<%= will_paginate @events, :previous_label => "<< #{t(:previous)}", :next_label => "#{t(:next)} >>" %>
+</div>

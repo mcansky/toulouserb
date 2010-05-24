@@ -10,9 +10,13 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password
 
+  def index
+    @events = Event.all
+  end
+
   def set_menu_vars
     @users_count = User.all.count
-    @events_count = Post.all.count
+    @events_count = Event.all.count
     @projects_count = Project.all.count
     check_layout
   end

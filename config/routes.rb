@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'blog_posts/rss.xml', :controller => 'posts', :action => 'rss'
 	map.connect 'posts/doc/:id', :controller => 'posts', :action => 'file'
   map.resources :user_sessions, :posts, :projects, :partners
-  map.resources :users, :blog_posts, :pages
+  map.resources :users, :blog_posts, :pages, :events
   # The priority is based upon order of creation: first created -> highest priority.
 
 	map.login "login", :controller => "user_sessions", :action => "new"

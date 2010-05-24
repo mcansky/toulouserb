@@ -1,0 +1,8 @@
+<% if events.size > 0 %>
+<% for event in events %>
+	<div class="event">
+		<h2><%= event.title %></h2>
+		<p><%= event.content %></p>
+	</div>
+<% end
+end %>
