@@ -11,8 +11,12 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password
 
   def index
-    @events = Event.all.reverse[0..4]
-    @posts = BlogPost.all.reverse[0..4]
+    conditions = Array.new
+    if !current_user
+      conditions = ["published = ?", "t"]
+    end
+    @events = Event.find(:conditions => conditions).reverse[0..4]
+    @posts = BlogPost.find(:conditions => conditions).reverse[0..4]
     @tweets = Array.new
   end
 

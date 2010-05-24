@@ -11,6 +11,7 @@ fr:
   last_tweets: "Tweets"
   about: "A propos"
   root: "Index"
+  new_event: "Nouvel evènement"
   date:
     formats:
       default: "%d-%m-%Y"
