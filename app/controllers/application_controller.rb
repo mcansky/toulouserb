@@ -15,8 +15,8 @@ class ApplicationController < ActionController::Base
     if !current_user
       conditions = ["published = ?", "t"]
     end
-    @events = Event.find(:conditions => conditions).reverse[0..4]
-    @posts = BlogPost.find(:conditions => conditions).reverse[0..4]
+    @events = Event.find(:all, :conditions => conditions).reverse[0..4]
+    @posts = BlogPost.find(:all, :conditions => conditions).reverse[0..4]
     @tweets = Array.new
   end
 
@@ -26,9 +26,9 @@ class ApplicationController < ActionController::Base
       conditions = ["published = ?", "t"]
     end
     @users_count = User.all.size
-    @events_count = Event.find(:conditions => conditions).size
+    @events_count = Event.find(:all, :conditions => conditions).size
     @projects_count = Project.all.size
-    @posts_count = BlogPost.find(:conditions => conditions).size
+    @posts_count = BlogPost.find(:all, :conditions => conditions).size
     check_layout
   end
 
