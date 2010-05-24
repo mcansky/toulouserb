@@ -4,3 +4,5 @@ db/development.sqlite3
 vendor/bundled_gems
 log/*
 public/system/*
+.bundle/config
+.rvmrc
