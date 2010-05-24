@@ -8,4 +8,8 @@ class Post < ActiveRecord::Base
   acts_as_textiled :content
   cattr_reader :per_page
   @@per_page = 10
+
+  def quick_desc
+    
+  end
 end

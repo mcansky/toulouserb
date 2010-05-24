@@ -1,0 +1,8 @@
+<h2><%= t(:last_posts) %></h2>
+<% if posts.size > 0 %>
+<% for post in posts %>
+	<div class="post">
+		<h3><%= link_to post.quick_desc, post %></h3>
+	</div>
+<% end
+end %>

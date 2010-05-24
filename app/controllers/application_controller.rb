@@ -11,7 +11,9 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password
 
   def index
-    @events = Event.all
+    @events = Event.all.reverse[0..4]
+    @posts = BlogPost.all.reverse[0..4]
+    @tweets = Array.new
   end
 
   def set_menu_vars

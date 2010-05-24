@@ -20,6 +20,6 @@ class Event < ActiveRecord::Base
       month = e_date.strftime("%m").to_i - 1
       date = e_date.strftime("%d #{months[month]} %Y %H:%M")
     end
-    return "<span class=\"date\">#{date}</span> #{title} @ #{location}"
+    return "<span class=\"date\">#{date}</span> <span class=\"title\">#{title}</span> <span class=\"location\">@ #{location}</span>"
   end
 end

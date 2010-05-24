@@ -112,11 +112,11 @@ h1, h2, h3, h4, a, a:hover {
 
 #content h1 {
 	font-size: 16pt;
-	color: #3288B9;
+	color: #d52100;
 }
 #content h2 {
 	font-size: 14pt;
-	color: #3288B9;
+	color: #d52100;
 }
 p, #content p.intro {
 	font-size: 11pt;
@@ -282,4 +282,39 @@ div.right_side {
 
 div.right_side {
 
+}
+
+div#events {
+	float: left;
+	width: 30%;
+}
+
+div#posts {
+	float: left;
+	width: 30%;
+}
+
+div#tweets {
+	float: left;
+	width: 30%;
+	margin-left: 5%;
+}
+
+div.event, div.post {
+	margin-left: 20px;
+}
+
+div.event span.date {
+	font-size: 10pt;
+	color: #AAA;
+}
+div.event span.location {
+	font-size: 10pt;
+}
+div.post span.date {
+	font-size: 10pt;
+	color: #AAA;
+}
+div.post span.tags {
+	font-size: 10pt;
 }

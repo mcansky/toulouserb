@@ -1,7 +1,8 @@
+<h2><%= t(:next_events) %></h2>
 <% if events.size > 0 %>
 <% for event in events %>
 	<div class="event">
-		<h2><%= event.quick_desc %></h2>
+		<h3><%= link_to event.quick_desc, event %></h3>
 	</div>
 <% end
 end %>
