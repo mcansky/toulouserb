@@ -8,12 +8,12 @@ class PagesController < ApplicationController
   def show
     @page = nil
     begin
-      @page = Page.find_by_title_en(params[:id])
+      @page = Page.find_by_title_en(params[:id].capitalize)
     rescue
     end
     unless @page
       begin
-        @page = Page.find_by_title_fr(params[:id])
+        @page = Page.find_by_title_fr(params[:id].capitalize)
       rescue
       end
     end
