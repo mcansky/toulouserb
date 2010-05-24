@@ -318,3 +318,8 @@ div.post span.date {
 div.post span.tags {
 	font-size: 10pt;
 }
+
+div.event h3.details {
+	font-size: 12pt;
+	margin-left: 25px;
+}

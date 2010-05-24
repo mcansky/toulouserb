@@ -6,7 +6,9 @@
 </h2>
 
 <% for event in @events %>
-	<%= render "event_short", :event => event %>
+	<div class="event">
+	<h3><%= link_to event.quick_desc, event %></h3>
+	</div>
 <% end %>
 
 <div id="pagination">

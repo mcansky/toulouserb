@@ -1,5 +1,6 @@
 <div class="event">
-<h2><%= @event.title %> <span class="pdate">@ <%= @event.e_date.strftime("%d/%m/%Y %H:%M") %></span></h2>
+<h2><%= @event.title %></h2>
+<h3 class="details"><%= @event.e_date.strftime("%d/%m/%Y %H:%M") %> @ <%= @event.location %></h3>
 <ul class="tags">
 	<% for tag in @event.tag_list %>
 		<li><%= link_to image_tag("/images/icons/tag-label.png", :title => "tag", :alt => nil, :border => 0) + " #{tag}", :action => "index", :tag => tag %></li>

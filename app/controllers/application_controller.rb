@@ -20,6 +20,7 @@ class ApplicationController < ActionController::Base
     @users_count = User.all.count
     @events_count = Event.all.count
     @projects_count = Project.all.count
+    @posts_count = BlogPost.all.count
     check_layout
   end
 
