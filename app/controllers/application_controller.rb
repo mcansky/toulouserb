@@ -4,6 +4,7 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   before_filter :set_menu_vars
+  before_filter :check_layout
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   # Scrub sensitive parameters from your log
@@ -13,6 +14,7 @@ class ApplicationController < ActionController::Base
     @users_count = User.all.count
     @events_count = Post.all.count
     @projects_count = Project.all.count
+    check_layout
   end
 
   def require_login
@@ -25,6 +27,11 @@ class ApplicationController < ActionController::Base
 	
 	def about
   end
+  
+  def logged_in?
+    return true if current_user
+    return false
+  end
 
 	private
 	def current_user_session
@@ -36,4 +43,9 @@ class ApplicationController < ActionController::Base
 		return @current_user if defined?(@current_user)
 		@current_user = current_user_session && current_user_session.record
 	end
+
+  def check_layout
+    "admin" if current_user
+    "application"
+  end
 end

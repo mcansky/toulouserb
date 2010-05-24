@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  layout :check_layout
   before_filter :require_login, :except => ["index", "show", "rss"]
 
   def index
@@ -77,6 +78,11 @@ class PostsController < ApplicationController
   def file
     @post = Post.find(params[:id])
     send_file @post.doc.path, :type => @post.doc_content_type, :disposition => 'attachment'
+  end
+
+  private
+  def check_layout
+    logged_in? ? "admin" : "application"
   end
 
 end

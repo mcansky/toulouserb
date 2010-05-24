@@ -1,0 +1,199 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #EEE;
+}
+
+div#topbar {
+	width: 100%;
+	padding: 5px;
+	text-align: right;
+	background: #555;
+}
+
+div#login a {
+	font-weight: bold;
+	color: #EEE;
+	margin-right: 20px;
+}
+
+div#admin {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#zone_name {
+	padding: 10px;
+	background: #4275a5;
+}
+
+div#zone_name h1 {
+	font-family: serif;
+	color: #EEE;
+}
+
+div#menu {
+	padding: 5px;
+	background: #555;
+}
+
+div#menu ul {
+	
+}
+
+div #menu ul li {
+	list-style: none;
+	display: inline;
+	margin-left: 10px;
+}
+
+div #menu ul li a {
+	font-family: serif;
+	font-size: 11pt;
+	text-decoration: none;
+	font-weight: bold;
+	color: #EEE;
+}
+
+input, textarea {
+	background: #FFF;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 2px;
+}
+
+div#content {
+	border-left: 2px solid #555;
+	border-right: 2px solid #555;
+	padding: 10px;
+	padding-bottom: 50px;
+	background: #FFF;
+}
+
+div#footer {
+	background: #555;
+	padding: 5px;
+	text-align: center;
+	color: #AAA;
+	font-family: serif;
+	font-size: 10pt;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+div#footer a {
+	color: #4275a5;
+	font-family: serif;
+	font-size: 10pt;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+div#carts {
+}
+
+div#carts table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#carts table tr th, div#cart table tr th, div#products table tr th {
+	background: #4275a5;
+	border: 0;
+	color: #EEE;
+	width: 140px;
+	padding: 5px;
+}
+
+div#carts table tr.alt, div#cart table tr.alt, div#products table tr.alt {
+	background: #DDD;
+}
+
+div#carts table tr td {
+	text-align: center;
+	padding: 5px;
+}
+
+div#carts table tr td.cart_number {
+	text-align: left;
+}
+div#products table th {
+	text-align: left;
+}
+div#products table tr td {
+	padding: 3px;
+}
+
+div#carts table tr td.cart_number a, div#products table tr a {
+	color: #4275a5;
+	font-weight: bold;
+	text-decoration: none;
+}
+div#carts table tr td.cart_number a:hover, div#products table tr a:hover {
+	text-decoration: none;
+}
+
+div#cart table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#cart table th.product_name {
+	width: 200px;
+	text-align: left;
+}
+div#cart table th.product_qty {
+	width: 100px;
+}
+div#cart table th.product_price {
+	width: 100px;
+	text-align: center;
+}
+div#cart table th.product_total {
+	width: 150px;
+	text-align: center;
+}
+div#cart table td {
+	text-align: center;
+	padding: 3px;
+}
+div#cart table tr.total td {
+	border-top: 2px solid #555;
+}
+div#cart table td.product {
+	text-align: left;
+}
+div#cart table td.total_amount {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14pt;
+}
+div#cart table td.cart_state {
+	font-size: 10pt;
+	color: #BBB;
+	padding-left: 30px;
+}
+div#cart table td.total {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+div#pagination {
+	font-size: 10pt;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+div#pagination a , div#pagination a:hover {
+	text-decoration: none;
+	color: #4275a5;
+}

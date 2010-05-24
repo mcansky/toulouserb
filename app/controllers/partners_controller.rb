@@ -1,4 +1,5 @@
 class PartnersController < ApplicationController
+  layout :check_layout
   before_filter :require_login, :except => ["index", "show"]
   def index
     conditions = Array.new
@@ -46,5 +47,10 @@ class PartnersController < ApplicationController
     @partner.destroy
     flash[:notice] = "Successfully destroyed partner."
     redirect_to partners_url
+  end
+
+  private
+  def check_layout
+    logged_in? ? "admin" : "application"
   end
 end

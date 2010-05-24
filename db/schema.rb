@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100416164531) do
+ActiveRecord::Schema.define(:version => 20100516120621) do
 
   create_table "blog_posts", :force => true do |t|
     t.string   "title"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(:version => 20100416164531) do
     t.string   "doc_content_type"
     t.integer  "doc_file_size"
     t.datetime "doc_updated_at"
+  end
+
+  create_table "pages", :force => true do |t|
+    t.string   "title_fr"
+    t.string   "title_en"
+    t.text     "content_fr"
+    t.text     "content_en"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "partners", :force => true do |t|

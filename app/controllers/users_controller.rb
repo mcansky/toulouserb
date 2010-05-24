@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  layout :check_layout
   before_filter :require_login, :except => ["new", "create"]
 
   def index
@@ -44,5 +45,10 @@ class UsersController < ApplicationController
     @user.destroy
     flash[:notice] = "User destroyed successfully."
     redirect_to users_url
+  end
+  
+  private
+  def check_layout
+    logged_in? ? "admin" : "application"
   end
 end

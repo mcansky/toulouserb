@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  layout :check_layout
   before_filter :require_login, :except => ["index", "show"]
   def index
     conditions = Array.new
@@ -56,5 +57,10 @@ class ProjectsController < ApplicationController
     @project.destroy
     flash[:notice] = "Successfully destroyed project."
     redirect_to projects_url
+  end
+  
+  private
+  def check_layout
+    logged_in? ? "admin" : "application"
   end
 end

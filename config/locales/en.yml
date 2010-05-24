@@ -3,3 +3,9 @@
 
 en:
   hello: "Hello world"
+  pages: "Pages"
+  projects: "Projects"
+  events: "Events"
+  blog_posts: "Posts"
+  users: "Users"
+  partners: "Partners"

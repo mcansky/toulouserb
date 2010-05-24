@@ -1,5 +1,6 @@
 class BlogPostsController < ApplicationController
   before_filter :require_login, :except => ["index", "show", "rss"]
+  layout :check_layout
 
   def index
     conditions = Array.new
@@ -77,6 +78,10 @@ class BlogPostsController < ApplicationController
   def file
     @blog_post = BlogPost.find(params[:id])
     send_file @blog_post.doc.path, :type => @blog_post.doc_content_type, :disposition => 'attachment'
+  end
+  private
+  def check_layout
+    logged_in? ? "admin" : "application"
   end
 
 end

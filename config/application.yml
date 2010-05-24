@@ -1,5 +1,6 @@
 # app/config/application.yml
 defaults: &defaults
+  site_name: toulouse.rb
   ganalytics: UA-15304320-1
   logs:
     email: email.log
