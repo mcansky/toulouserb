@@ -2,14 +2,28 @@ class PagesController < ApplicationController
   layout :check_layout
   before_filter :require_admin, :except => ['show']
   def index
-     @pages = Page.all
-   end
+    @pages = Page.all
+  end
 
-   def show
-     @page = Page.find(params[:id]) if params[:id].gsub(/[']/, '\\\\\'')
-     .class == ("Integer" || "FixNum")
-     @page = Page.find_by_title_fr(params[:id].capitalize) if !@page || @page == nil
-     @page = Page.find_by_title_en(params[:id].capitalize) if !@page || @page == nil
+  def show
+    @page = nil
+    begin
+      @page = Page.find_by_title_en(params[:id])
+    rescue
+    end
+    unless @page
+      begin
+        @page = Page.find_by_title_fr(params[:id])
+      rescue
+      end
+    end
+    unless @page
+      begin
+        @page = Page.find(params[:id])
+      rescue
+      end
+    end
+    redirect_to root_url unless @page
    end
 
    def new
