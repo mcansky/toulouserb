@@ -17,10 +17,10 @@ class ApplicationController < ActionController::Base
   end
 
   def set_menu_vars
-    @users_count = User.all.count
-    @events_count = Event.all.count
-    @projects_count = Project.all.count
-    @posts_count = BlogPost.all.count
+    @users_count = User.all.size
+    @events_count = Event.all.size
+    @projects_count = Project.all.size
+    @posts_count = BlogPost.all.size
     check_layout
   end
 
