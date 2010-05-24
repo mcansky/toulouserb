@@ -6,7 +6,7 @@ class PagesController < ApplicationController
    end
 
    def show
-     @page = Page.find(params[:id]) if params[:id].class == "Integer"
+     @page = Page.find(params[:id]) if params[:id].class == "Integer" || "FixNum"
      @page = Page.find_by_title_fr(params[:id].capitalize) if !@page || @page == nil
      @page = Page.find_by_title_en(params[:id].capitalize) if !@page || @page == nil
    end

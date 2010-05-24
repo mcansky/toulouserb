@@ -24,6 +24,11 @@ class ApplicationController < ActionController::Base
 			redirect_to root_url
 		end
 	end
+  def require_admin
+    return true if current_user && current_user.is_admin?
+    flash[:warning] = "Not authorized"
+    redirect_to root_url
+  end
 	
 	def about
   end
