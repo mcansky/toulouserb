@@ -1,5 +1,6 @@
 # app/config/application.yml
 defaults: &defaults
+  contact: contact@toulouserb.org
   site_name: toulouse.rb
   ganalytics: UA-15304320-1
   logs:
