@@ -8,7 +8,11 @@
 	<%= Settings.site_name %>
 </title>
 <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 <%= javascript_include_tag :defaults %>
+<%= javascript_include_tag 'prototype.js' %>
+<%= javascript_include_tag 'scriptaculous.js?load=effects,builder'	%>
+<%= javascript_include_tag 'lightbox.js'	%>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -20,7 +24,7 @@ pageTracker._setDomainName(".toulouserb.org");
 pageTracker._trackPageview();
 } catch(err) {}</script>
 
-<link rel="alternate" title="Articles" href="/posts/rss.xml" type="application/rss+xml" />
+<link rel="alternate" title="Events" href="/events/rss.xml" type="application/rss+xml" />
 <link rel="alternate" title="Blog" href="/blog_posts/rss.xml" type="application/rss+xml" />
 </head>
 
