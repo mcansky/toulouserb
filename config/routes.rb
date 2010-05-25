@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
-	map.connect 'posts/rss.xml', :controller => 'posts', :action => 'rss'
-  map.connect 'blog_posts/rss.xml', :controller => 'posts', :action => 'rss'
+	map.connect 'events/rss.xml', :controller => 'events', :action => 'rss'
+  map.connect 'blog_posts/rss.xml', :controller => 'blog_posts', :action => 'rss'
 	map.connect 'posts/doc/:id', :controller => 'posts', :action => 'file'
   map.resources :user_sessions, :posts, :projects, :partners
   map.resources :users, :blog_posts, :pages, :events
